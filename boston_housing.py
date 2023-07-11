@@ -72,7 +72,7 @@ st.header('Predicción de MEDV')
 st.write(prediction)
 st.write('---')
 
-# Explaining the model's predictions using SHAP values
+# Explicación del modelo usando los valores de Shap
 
 explainer = shap.TreeExplainer(model)
 shap_values = explainer.shap_values(X)
